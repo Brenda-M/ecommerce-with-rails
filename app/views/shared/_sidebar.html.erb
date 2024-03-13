@@ -1,12 +1,4 @@
-<aside class="bg-gray-900 text-white w-64 flex-shrink-0">
-  <div class="p-4 h-full">
-    <p><%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %></p>
+
+  <div class="text-white">
     <%= render partial: 'layouts/cart', locals: {cart: @cart } %>
-    <ul class="flex flex-col">
-      <li><%= link_to "Home", "#" %></li>
-      <li><%= link_to "Products", "#" %></li>
-      <li><%= link_to "News", "#" %></li>
-      <li><%= link_to "Contact", "#" %></li>
-    </ul>
   </div>
-</aside>

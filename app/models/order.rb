@@ -1,13 +1,23 @@
 class Order < ApplicationRecord
-  validates :name, :address, :email, presence: true
-  # validates :pay_type, inclusion: { in: pay_types.keys }
+
   has_many :line_items, dependent: :destroy
-  
+
   enum pay_type: {
-    "Check" => 0,
-    "Credit card" => 1,
-    "Purchase Order" => 2
+    'Check' => 0,
+    'Credit card' => 1,
+    'Purchase order' => 2
   }
+
+  validates :name, :address, :email, presence: true
+  validates :pay_type, inclusion: pay_types.keys
+
+  def self.pay_types
+    {
+      'Check' => 0,
+      'Credit card' => 1,
+      'Purchase Order' => 2
+    }
+  end
 
   def add_line_items_from_cart(cart)
     cart.line_items.each do |item|

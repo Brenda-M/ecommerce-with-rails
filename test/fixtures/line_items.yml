@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  product: one
-  cart: one
+  product: product1
+  cart: cart1
 
 two:
-  product: two
-  cart: two
+  product: product2
+  cart: cart2

@@ -16,13 +16,13 @@ products_data = [
   {
     title: 'Classic Aviator Sunglasses',
     description: 'Complete your look with these classic aviator sunglasses. Featuring a timeless design and UV-protective lenses, they offer both style and protection from the sun\'s harmful rays. The lightweight metal frame and adjustable nose pads ensure a comfortable fit, while the mirrored lenses add a touch of sophistication. Whether you\'re lounging by the pool or strolling through the city streets, these sunglasses will keep you looking cool and confident.',
-    image_url: 'aviator-glasses.avif',
+    image_url: 'glasses.webp',
     price: 24.99
   },
   {
     title: 'Leather Crossbody Bag',
     description: 'Add a touch of elegance to any outfit with this chic leather crossbody bag. Crafted from premium leather, it\'s both stylish and practical. The adjustable strap allows for comfortable wear, while the multiple pockets provide ample storage for your essentials. Whether you\'re running errands or heading out for a night on the town, this versatile bag is sure to become your go-to accessory. Available in a range of colors to suit your personal style.',
-    image_url: 'leather-bag.avif',
+    image_url: 'leather-bag.jpg',
     price: 79.99
   },
   {

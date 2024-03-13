@@ -1,19 +1,18 @@
 
 <div class="w-full">
   <%= render 'store/notice'%>
-  <div class="font-bold">
-    Your Pragmatic Catalog
+  <div class="font-bold uppercase text-2xl mb-4">
+    Top Products for You
   </div>
   <%= turbo_stream_from 'products' %>
 
-  <ul>
-  <% cache @products do %>
-   <% @products.each do |product| %>
-   <% cache product do %>
-      <%= render partial: 'product', object: product %>
-   <% end %>
-  <% end %>
-  <% end %>
-</ul>
+  <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <% cache @products do %>
+      <% @products.each do |product| %>
+        <% cache product do %>
+          <%= render partial: 'product', object: product %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </ul>
 </div>
-

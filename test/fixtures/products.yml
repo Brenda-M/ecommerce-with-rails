@@ -1,0 +1,14 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+product1:
+  title: "Example Product 1"
+  description: "Description for product 1"
+  image_url: "example1.jpg"
+  price: 19.99
+
+product2:
+  title: "Example Product 2"
+  description: "Description for product 2"
+  image_url: "example2.jpg"
+  price: 29.99
+
